@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💌</title>
+
+<style>
+body{
+margin:0;
+background:#ffe6f2;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial,sans-serif;
+overflow:hidden;
+}
+
+.box{
+text-align:center;
+}
+
+.envelope{
+font-size:120px;
+cursor:pointer;
+transition:.5s;
+}
+
+.envelope:hover{
+transform:scale(1.1);
+}
+
+button{
+padding:12px 25px;
+margin:15px;
+border:none;
+border-radius:15px;
+font-size:20px;
+cursor:pointer;
+}
+
+#yes{
+background:#ff4f93;
+color:white;
+}
+
+#no{
+background:white;
+color:#ff4f93;
+position:absolute;
+}
+
+h2{
+color:#ff4f93;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>💌 واش بغيتي تحلي الرسالة؟</h2>
+
+<button id="yes" onclick="alert('هاد الجزء غادي نكملوه من بعد ❤️')">إيه</button>
+
+<button id="no">لا</button>
+
+<br><br>
+
+<div class="envelope">💌</div>
+
+</div>
+
+<script>
+
+const no=document.getElementById("no");
+
+no.addEventListener("mouseover",()=>{
+
+no.style.left=Math.random()*80+"vw";
+
+no.style.top=Math.random()*80+"vh";
+
+});
+
+</script>
+
+</body>
+</html>
