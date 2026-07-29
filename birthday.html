@@ -108,9 +108,11 @@ setTimeout(()=>h.remove(),6000);
 
 setInterval(heart,300);
 
-	function showSurprise() {
+	function showSurprise(){
     document.getElementById("surprise").style.display = "block";
+    document.getElementById("surprise").scrollIntoView({behavior:"smooth"});
 }
+
 </script>
 
 </body>
