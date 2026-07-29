@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عيد ميلاد سعيد أسية ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ffd6e8,#fff5f8);
+    text-align:center;
+    overflow:hidden;
+}
+
+h1{
+    color:#e91e63;
+    margin-top:50px;
+    font-size:42px;
+}
+
+p{
+    font-size:24px;
+    color:#444;
+    width:80%;
+    margin:auto;
+    line-height:1.8;
+}
+
+button{
+    margin-top:40px;
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    background:#ff4f87;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.heart{
+    position:fixed;
+    color:red;
+    animation:fall 6s linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:1;
+}
+100%{
+transform:translateY(100vh);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎉 عيد ميلاد سعيد أسية 🎂❤️</h1>
+
+<p>
+كل عام وأنتِ بخير ❤️<br><br>
+
+نتمنى لكِ سنة مليئة بالسعادة والنجاح والضحك الجميل.<br>
+الله يخليك لينا ويحقق جميع أحلامك.<br><br>
+
+أنتِ إنسانة مميزة جداً، وتستحقين كل الخير في الدنيا. 🌹
+</p>
+
+<button onclick="alert('❤️ أحبك بزاف، وعيد ميلاد سعيد ❤️')">
+اضغطي هنا
+</button>
+
+<script>
+function heart(){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.fontSize=(20+Math.random()*30)+"px";
+document.body.appendChild(h);
+
+setTimeout(()=>h.remove(),6000);
+}
+
+setInterval(heart,300);
+</script>
+
+</body>
+</html>
