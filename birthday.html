@@ -71,10 +71,29 @@ opacity:0;
 أنتِ إنسانة مميزة جداً، وتستحقين كل الخير في الدنيا. 🌹
 </p>
 
-<button onclick="alert('❤️ أحبك بزاف، وعيد ميلاد سعيد ❤️')">
-اضغطي هنا
+<button onclick="showSurprise()">
+💌 افتحي رسالتي
 </button>
 
+<div id="surprise" style="display:none; margin-top:30px;">
+
+<h2>💖</h2>
+
+<p style="font-size:22px; line-height:2;">
+كل عام وأنتِ أجمل إنسانة في حياتي ❤️<br><br>
+
+أتمنى أن يكون هذا العام مليئًا بالفرح والنجاح والابتسامات الجميلة.<br><br>
+
+أنا سعيد جدًا لأنك موجودة، وأتمنى أن تبقي دائمًا سعيدة.<br><br>
+
+عيد ميلاد سعيد يا أسية 🎂💕
+</p>
+
+<button onclick="window.open('https://youtu.be/eQPcjUQEaZU?si=Nb5qTz5KVT5nDvS5','_blank')">
+🎵 افتحي الأغنية
+</button>
+
+</div>
 <script>
 function heart(){
 let h=document.createElement("div");
@@ -88,6 +107,10 @@ setTimeout(()=>h.remove(),6000);
 }
 
 setInterval(heart,300);
+
+	function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
 </script>
 
 </body>
